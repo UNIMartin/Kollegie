@@ -1,0 +1,295 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Grundfos Kollegiet - indkøb</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+	<script src="https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.js"></script>
+</head>
+
+<body>
+	
+	<header>
+		
+		<div id="navigation" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+	  <a class="menu" href="forside.html">Tilbage til forsiden</a>
+    <a class="menu" href="#tilbudsaviser">Tilbudsavis</a>
+    <a class="menu" href="#madplan_retter">Madplan</a>
+	  <div id="undermenu_blok">
+		  <a class="undermenu" href="#ret1">Mandag</a>
+    <a class="undermenu" href="#ret2">Tirsdag</a>
+    <a class="undermenu" href="#ret3">Onsdag</a>
+    <a class="undermenu" href="#ret4">Torsdag</a>
+	  <a class="undermenu" href="#ret5">Fredag</a>
+	  <a class="undermenu" href="#ret6">Lørdag</a>
+	  <a class="undermenu" href="#rester">Søndag</a>
+	</div>
+    <a class="menu" href="#indkoebsliste">Indkøbsliste</a>
+  </div>
+</div>
+		
+		<a href="forside.html"><img id="bannerlogo" src="img/GK-logo-bygning.png" alt="Grundfos Kollegie bannerlogo"></a>
+		
+		<span id="menuknap" style="cursor:pointer" onclick="openNav()">&#9776;</span>
+		
+		
+	</header>
+	
+	<a id="toppen_knap" href="#bannerlogo">&#8593;</a>
+	
+	<main>
+		
+		<section id="tilbudsaviser">
+			
+			<h1 id="tilbud-titel" class="sektionstitler">Tilbudsaviser</h1>
+			
+			<div id="tilbudsblokke">
+			<div id="netto_blok">
+				<img id="netto-logo" src="img/netto_logo.png" alt="netto logo">
+				<p class="tilbudsavis_tekst"><i>Se tilbudsavisen:</i></p>
+				<a href="https://netto.dk/tilbudsavis/"><img id="netto-tilbud" src="img/netto_tilbud.png" alt="netto tilbudsavis"></a>
+			</div>	
+			
+			<div id="rema_blok">
+				<img id="rema-logo" src="img/rema_logo.png" alt="rema 1000 logo">
+				<p class="tilbudsavis_tekst"><i>Se tilbudsavisen:</i></p>
+				<a href="https://rema1000.dk/om-rema-1000/avis/avis/"><img id="rema-tilbud" src="img/rema_tilbud.png" alt="rema 1000 tilbudsavis"></a>
+			</div>	
+			</div>	
+			
+			<div id="map"></div>
+		
+		</section>
+		
+		
+		<section id="madplan_retter">
+			
+			<h1 id="madplan_titel">Madplan for uge 15</h1>
+			<p id="madplan_undertitel">Aftensmad (+ rester til frokost eller til ugens restedag) til 7 dage for 184,60 kr. i REMA 1000</p>
+			
+			
+			<div class="retter_blok">
+				
+			<div id="ret1">
+				<h2 class="ret_titel">Boller i paprikasovs</h2>
+				<p><b>Varighed:</b> 25-30 min.<br>
+					<b>Antal:</b> 2 voksne og 2 børn (eller rester til frokost eller til ugens restedag)</p>
+				
+				<img class="retter" src="img/mad1.jpg" alt="billede af boller i paprikasovs">
+				
+				<h2><br><b>Ingredienser</b></h2>
+				<p>	
+					• 500 g. hk. svinefars<br>
+					• 4 ps. Kogepose ris<br>
+					• 2 dl. mælk<br>
+					• 1 løg<br>
+					• 1,5 dl. Havregryn<br>
+					• 1 grøntsagsbouillon<br>
+					• Fedtstof + mel<br>
+					• Salt + peber<br>
+					• 2 spsk. paprika<br>
+					• Vand<br>
+					• Evt. 1. tsk. sukker<br>
+				</p>
+				<h2><br><b>Fremgangsmåde</b></h2>
+				<p class="fremgangsmaade">
+					1.	Løg pilles og snittes fint.<br><br>
+					2.	Vandet til ris og boller sættes på kog med lidt salt i.<br><br>
+					3.	Fars røres sammen med salt, peber, havregryn, løg og en sjat vand.<br><br>
+					4.	Farsen formes til mellemstore boller (golfboldstørrelse) og koges i vandet. De er færdige, når de når op til overfladen (ca. 10 min.).<br><br>
+					5.	Risene koges efter anvisning på emballagen.<br><br>
+					6.	Fedtstof smeltes i en gryde, paprika tilsættes og til sidst mel, der røres til en smørbolle.<br><br>
+					7.	Tilsæt vand, bouillon og mælk til gryden og rør godt rund.<br><br>
+					8.	Smag til med salt og peber.<br><br>
+					9.	Bollerne tilsættes sovsen, gives et hurtigt opkog og serveres med ris.<br><br>
+				</p>
+				
+			</div>
+				
+			<div id="ret2">
+				<h2 class="ret_titel">Byg-selv-frikadelleburger m. sprøde curly fries</h2>
+				<p><b>Varighed:</b> 30 min.<br>
+					<b>Antal:</b> 2 voksne og 2 børn (eller rester til frokost eller til ugens restedag)</p>
+				
+				<img class="retter" src="img/mad2.jpg" alt="billede af frikadelleburger med curly fries">
+				
+				<h2><br><b>Ingredienser</b></h2>
+				<p>	
+					<b><i>Frikadeller:</i></b><br>
+					• 2 løg<br>
+					• 1dl. havregryn<br>
+					• 1/2 dl. vand eller mælk<br>
+					• Salt + peber<br>
+					• 500g. hk. svinefars<br><br>
+					
+					<b><i>Andet:</i></b><br>
+					• 1 pk. burgerboller<br>
+					• Agurkesalat (eller 1/2 alm. agurk)<br>
+					• 75 g. frisk spinat<br>
+					• Rødkål<br>
+					• Dressing<br>
+					• Fedtstof til stegning<br>
+					• Ketchup, remoulade og mayonnaise<br>
+					• Evt. 600 g. curly fries eller andre pommes frites + olie<br>
+				</p>
+				<h2><br><b>Fremgangsmåde</b></h2>
+				<p class="fremgangsmaade">
+					1.	Løg pilles og snittes fint.<br><br>
+					2.	Svinefars, havregryn, løg, salt og peber blandes sammen og formes til store bøffer.<br><br>
+					3.	Frikadellerne steges på panden i fedtstof, og burgerbollerne kommes i ovnen efter anvisning på emballagen.<br><br>
+					4.	Skyl spinatbladene (eller skær iceberg) og byg din burger med rødkål, frikadelle, salat, agurkesalat og dressing.<br><br>
+				</p>
+				
+			</div>	
+				
+			<div id="ret3">
+				<h2 class="ret_titel">Karbonader m. kartofler, brunsovs og blandet salat</h2>
+				<p><b>Varighed:</b> 30 min.<br>
+					<b>Antal:</b> 2 voksne og 2 børn (eller rester til frokost eller til ugens restedag)</p>
+				
+				<img class="retter" src="img/mad3.jpg" alt="billede af karbonader med karftofler, brunsovs og blandet salat">
+				
+				<h2><br><b>Ingredienser</b></h2>
+				<p>	
+					<b><i>Kød:</i></b><br>
+					• 500 g. hk. svinefars<br>
+					• Rasp<br>
+					• Tynd meljævning (mel rørt op med vand)<br>
+					• Salt + peber<br>
+					• Fedtstof<br><br>
+					
+					<b><i>Kartofler:</i></b><br>
+					• 1 kg. kartofler<br>
+					• Vand + salt<br><br>
+					
+					<b><i>Sovs:</i></b><br>
+					• Kulør<br>
+					• 3 dl. mælk<br>
+					• 2 dl. kartoffelvand<br>
+					• Stegefedt fra karbonader<br>
+					• 2 spsk. flydende margarine<br>
+					• 2 spsk. mel<br>
+					• Salt + peber<br><br>
+					
+					<b><i>Tilbehør:</i></b><br>
+					• 1stk. salaskålen (bæandet salat fra REMA 1000)<br>
+					• 1 ds. majs<br>
+				</p>
+				<h2><br><b>Fremgangsmåde</b></h2>
+				<p class="fremgangsmaade">
+					1.	Karbonaderne formes, vendes i tynd meljævning og derefter i rasp. Inden stegning krydres de med salt og peber.<br><br>
+					2.	Kartoflerne skrælles og skæres i halve. Derefter koges de i letsaltet vand, til de er møre.<br><br>
+					3.	Steg karbonaderne på panden i fedtstof.<br><br>
+					4.	Grøntsagerne koges efter anvisning på emballagen.<br><br>
+					5.	Fedtstof smeltes i en gryde, tilsæt derefter mel og rør rundt, så det bliver til en smørbolle. Tilsæt kartoffelvand og kulør. Smag til med salt, peber og fedtstof fra panden med karbonaderne.<br><br>
+					6.	Server med salat.<br><br>
+				</p>
+				
+			</div>
+				
+			<div id="ret4">
+				<h2 class="ret_titel">Klassisk rugbrødsdag</h2>
+				<p><b>Varighed:</b> 5-10 min.<br>
+					<b>Antal:</b> 1 person</p>
+				
+				<img class="retter" src="img/mad4.jpg" alt="billede af klassisk rugbrød">
+				
+				<h2><br><b>Fremgangsmåde</b></h2>
+				<p class="fremgangsmaade">
+					Brug rester fra ugen. Kyllingelår kan evt. koges eller steges i ovnen og serveres som pålæg til rugbrød, hvis ikke man har flere rester tilbage.
+				</p>
+				
+			</div>	
+				
+			<div id="ret5">
+				<h2 class="ret_titel">Tarteletter med kylling, asparges og grønt</h2>
+				<p><b>Varighed:</b> 1 time og 15 min.<br>
+					<b>Antal:</b> 2 voksne og 2 børn (eller rester til frokost eller til ugens restedag)</p>
+				
+				<img class="retter" src="img/mad5.jpg" alt="billede af tarteletter med kylling, asparges og grønt">
+				
+				<h2><br><b>Ingredienser</b></h2>
+				<p>	
+					• 2 gulerødder<br>
+					• 1/2 ps. kyllingelår<br>
+					• 1 ds. aspargessnitter<br>
+					• 2 dl. mælk<br>
+					• 2 pk. tarteletbunde<br>
+					• 3 dl. hønsebouillon (1 terning)<br>
+					• 1 løg<br>
+					• 1 spsk. mel<br>
+					• 3 spsk. flydende margarine<br>
+				</p>
+				<h2><br><b>Fremgangsmåde</b></h2>
+				<p class="fremgangsmaade">
+					1.	Løg pilles og skæres i grove tern.<br><br>
+					2.	Skræl gulerødder og skær det ligeledes i grove tern.<br><br>
+					3.	Put kylling, gulerødder, løg og en hønsebouillonterning i vand i en gryde, så det dækker.<br><br>
+					4.	Kog kyllingen i 1 time eller til, den er mør. Gem vand fra gryden og hæld det fra i en skål (det skal bruges som bouillon til sovsen).<br><br>
+					5.	Pil kyllingen fra lårene.<br><br>
+					6.	Smelt margarine i en gryde og tilsæt mel. Rør godt rund til en smørbolle.<br><br>
+					7.	Væden fra dine asparges sigtes ned i gryden.<br><br>
+					8.	Mælk og bouillon (vandet fra kyllingen) tilsættes.<br><br>
+					9.	Tænd ovnen på 200 grader alm. ovn.<br><br>
+					10.	Når sovsen er kogt igennem, tilsættes kyllingekød, gulerødder, løg og aspargessnitterne. Lad det simre videre til tarteletterne er færdige.<br><br>
+					11.	Smag til med salt og peber.<br><br>
+					12.	Tarteletterne varmes i 4-5 min. i ovnen.<br><br>
+					13.	Tarteletterne fyldes med kødfyldet ved servering og pyntes med revet gulerod.<br><br>
+					
+				</p>
+				
+			</div>	
+				
+			<div id="ret6">
+				<h2 class="ret_titel">Kyllingelår . ris, bearnaisesauce og bønner</h2>
+				<p><b>Varighed:</b> 50-55 min.<br>
+					<b>Antal:</b> 2 voksne og 2 børn (eller rester til frokost eller til ugens restedag)</p>
+				
+				<img class="retter" src="img/mad6.jpg" alt="billede af kyllingelår med ris, bearnaisesauce og bønner">
+				
+				<h2><br><b>Ingredienser</b></h2>
+				<p>	
+					• 4 stk. kyllingelår<br>
+					• 2 breve bearnaise<br>
+					• 5 dl. mælk<br>
+					• 500 g. grønne bønner<br>
+					• 3 ps. ris<br>
+					• Salt + paprika<br>
+					• Olie<br>
+					• Flydende margarine<br>
+					• Vand<br>
+				</p>
+				<h2><br><b>Fremgangsmåde</b></h2>
+				<p class="fremgangsmaade">
+					1.	Ovnen tændes på 225 grader varmluft.<br><br>
+					2.	Olie, paprika og salt blandes sammen til en olieblanding og pensles på kyllingen.<br><br>
+					3.	Kyllingen puttes i ovnen og gives 25 min. ved 225 grader. Derefter skrues ned til 200 grader i 10 min. (varmluft) og de sidste 10 min. ved 200 grader alm. ovn.<br><br>
+					4.	Ris og bønner koges efter anvisning på emballagen.<br><br>
+					5.	Fedtstof smeltes i en gryde og bearnaisebrevene tilsættes. Mælk tilsættes efter anvisning på pakken og røres rundt.<br><br>
+				</p>
+				
+			</div>	
+			</div>
+			
+			<h2 id="rester" class="ret_titel">Ugens restedag - alt godt fra ugen</h2>
+			
+			<p id="rester_tekst">Sidste dag på ugen er restedag - her kan der frit vælges imellem ugens rester (hvis der er nogen tilbage).</p>
+		
+		
+		</section>
+		
+		<img id="indkoebsliste" src="img/Indkøbsseddel.png" alt="indkøbsliste fra REMA 1000">
+		
+	</main>
+	
+	
+	<script src="js/js.js"></script>
+	
+</body>
+</html>

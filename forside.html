@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Grundfos Kollegiet</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+	<script src="https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.js"></script>
+</head>
+
+<body>
+	
+	<header>
+		
+		<div id="navigation" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+	  <a class="menu" href="#nyheder">Nyheder</a>
+    <a class="menu" href="#kalender">Fælleskalender</a>
+    <a class="menu" href="indkoeb.html">Indkøb</a>
+	  <a class="menu" href="404.html">Vasketider</a>
+	  <a class="menu" href="#husregler">Husregler</a>
+  </div>
+</div>
+		
+		<img id="bannerlogo" src="img/GK-logo-bygning.png" alt="Grundfos Kollegie bannerlogo">
+		
+		<span id="menuknap" style="cursor:pointer" onclick="openNav()">&#9776;</span>
+		
+		
+	</header>
+	
+	<a id="toppen_knap" href="#bannerlogo">&#8593;</a>
+	
+	<main>
+		
+		<section id="dagens_tip">
+			
+			<h1 class="sektionstitler" id="dagens_tip_titel">Dagens grønne tip</h1>
+			
+			<p class="lille_break"><b><i>"Alle poser, plastik eller stof, kan genbruges.</i></b></p>
+			<p class="broedtekst" id="dagens_tip_tekst">	
+				<i>Du kan komme igennem livet med et meget lille forbrug af poser. <br>Stofposer/net er blevet meget populære i nyere tid, for at formindske plastiskproduktionen, men hvis du har plastiskposer fra supermarkedet i forvejen, så kan de også genbruges igen og igen, og de kan foldes sammen til at bliver meget små, så de ikke optager særlig meget plads i tasken.</i></p>
+			<p class="lille_break"><b><i>Tænkt på miljøet - genbrug alle dine poser."</i></b></p>
+		
+		</section>
+		
+		
+		<section id="nyheder">
+			
+			<h1 class="sektionstitler">Nyheder</h1>
+			
+			<p class="lille_break">14/3-2021</p>
+			<p class="lille_break"><b>Vejarbejde foran hovedindgangen</b></p>
+			<p class="nyheder_tekst">
+				Fra og med i dag vil hovedindgangen være spærret af i forbindelse med noget vejarbejde. Det vil derfor være nødvendigt at gøre brug af bagindgangen i stedet for. Vi regner med, at arbejdet er færdigt pr. 1/5.</p>
+			
+			<p class="lille_break">2/3-2021</p>
+			<p class="lille_break"><b>Administrationen holder fortsat lukket</b></p>
+			<p class="nyheder_tekst">
+				Vi følger myndighedernes anbefalinger i forhold til begrænsning af personlig kontakt. Derfor holder administrationen fortsat lukket. I kan som altid kontakte os pr. mail eller telefon.</p>
+		
+		</section>
+		
+		
+		<section id="kalender">
+			
+			<h1 class="sektionstitler">Fælleskalender</h1>
+		
+			<iframe id="mobilkalender" src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=2&amp;bgcolor=%237CB342&amp;ctz=Europe%2FCopenhagen&amp;src=NzIxODR2N2FudTNzbmFmMGxnMzlnYjFjajhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%237CB342&amp;showTitle=0&amp;showPrint=0&amp;showTz=0&amp;mode=AGENDA&amp;showNav=0&amp;showCalendars=1&amp;showTabs=0"></iframe>
+		
+			<iframe id="webkalender" src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=2&amp;bgcolor=%237CB342&amp;ctz=Europe%2FCopenhagen&amp;src=NzIxODR2N2FudTNzbmFmMGxnMzlnYjFjajhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%237CB342&amp;showTitle=0&amp;showPrint=0&amp;showTz=0&amp;mode=WEEK&amp;showNav=1&amp;showCalendars=1&amp;showTabs=1"></iframe>
+			
+		</section>	
+		
+		<section id="indkoeb">
+			
+			<a href="indkoeb.html" id="indkoeb_link"><h1 class="sektionstitler" >Indkøb <i class="material-icons md-36">arrow_forward</i></h1></a>
+			
+		</section>	
+		
+		
+		<section id="vasketider">
+			
+			<a href="404.html" id="vasketider_link"><h1 class="sektionstitler" >Vasketider <i class="material-icons md-36">arrow_forward</i></h1></a>
+			
+		</section>
+		
+		
+		<section id="husregler">
+			
+			<img id="husregler_billede" src="img/husregler.png" alt="billede af husreglerne hos Grundfos Kollegie">
+		
+		</section>
+		
+	</main>
+	
+	
+	
+	<footer>
+	
+	</footer>
+	
+	
+	
+	<script src="js/js.js"></script>
+	
+</body>
+</html>

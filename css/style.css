@@ -1,3 +1,463 @@
 @charset "utf-8";
 /* CSS Document */
 
+
+/* ---------- START login ---------- */
+#login_titel {
+	margin-top: 50px;
+	text-align: center;
+	font-size: 24px;
+}
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #dac093;
+  color: black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+	border-radius: 30px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.container {
+  margin-left: 60px;
+	margin-right: 60px;
+	margin-bottom: 100px;
+	
+}
+#succes {
+	display: block;
+	text-align: center;
+	font-size: 20px;
+	color: white;
+	background-color: lime;
+	border-radius: 30px;
+	padding: 5px;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+@media screen and (min-width: 450px){
+	#succes {
+		margin-left: 120px;
+		margin-right: 120px;
+	}
+}
+@media screen and (min-width: 900px){
+	#succes {
+		margin-left: 200px;
+		margin-right: 200px;
+	}
+}
+/* ---------- SLUT login ---------- */
+
+
+/* ---------- START main stuff ---------- */
+html {
+	scroll-behavior: smooth;
+}
+body, h1, h2, p, a{
+	font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.lille_break {
+	margin-bottom: -10px;
+}
+body {
+	background-color: #fffbf2;
+}
+h1 {
+	text-align: center;
+	font-size: 30px;
+}
+p {
+	text-align: center;
+	font-size: 16px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+h2 {
+	text-align: center;
+	font-size: 25px;
+}
+#toppen_knap {
+	position: fixed;
+	z-index: 1;
+	right: 15px;
+	top: 90%;
+	font-size: 40px;
+	background-color: rgb(111,142,96);
+	background-color: rgba(111,142,96, 0.9);
+	color: black;
+	text-decoration: none;
+	padding: 5px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-radius: 45px;
+}
+@media screen and (min-width: 450px) {
+	h1 {
+		font-size: 40px;
+	}
+	p {
+		text-align: left;
+		font-size: 20px;
+		margin-left: 30px;
+		margin-right: 30px;
+	}
+	h2 {
+		text-align: left;
+		margin-left: 30px;
+		font-size: 30px;
+	}
+}
+/* ---------- SLUT main stuff ---------- */
+
+
+/* ---------- START header ---------- */
+#bannerlogo {
+	display: block;
+	margin: auto;
+	width: 50%;
+}
+#menuknap {
+	position: absolute;
+	font-size: 30px;
+	top: 20px;
+	left: 20px;
+}
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color: rgb(111,142,96);
+  background-color: rgba(111,142,96, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.menu {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.menu:hover, .menu:focus {
+  color: white;
+}
+
+.closebtn {
+	color: black;
+	text-decoration: none;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .menu {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+@media screen and (min-width: 450px){
+	#menuknap {
+		font-size: 45px;
+		top: 50px;
+		left: 50px;
+	}
+}
+@media screen and (min-width: 900px){
+	#menuknap {
+		font-size: 60px;
+		top: 70px;
+		left: 70px;
+	}
+}
+/* ---------- SLUT header ---------- */
+
+
+/* ---------- START dagens grønne tip ---------- */
+#dagens_tip_titel {
+	color: #6f8e60;
+	font-style: oblique;
+}
+#dagens_tip_tekst {
+	margin-bottom: -10px;
+}
+/* ---------- SLUT dagens grønne tip ---------- */
+
+
+/* ---------- START kalendere ---------- */
+#kalender {
+	margin-top: 60px;
+}
+#webkalender {
+	display: none;
+}
+#mobilkalender {
+	display: block;
+	width: 92%;
+	height: 400px;
+	margin: auto;
+}
+@media screen and (min-width: 450px){
+	#webkalender {
+		display: block;
+		width: 92%;
+		height: 600px;
+		margin: auto;
+	}
+	#mobilkalender {
+		display: none;
+	}
+}
+/* ---------- SLUT kalendere ---------- */
+
+
+/* ---------- START nyheder ---------- */
+#nyheder {
+	margin-top: 60px;
+}
+.nyheder_tekst {
+	margin-bottom: 30px;
+}
+/* ---------- SLUT nyheder ---------- */
+
+
+/* ---------- START tilbudsaviser ---------- */
+#tilbud-titel {
+	margin-top: 60px;
+}
+.tilbudsavis_tekst {
+	text-align: center;
+	margin-bottom: 5px;
+}
+#netto-logo {
+	width: 55%;
+	display: block;
+	margin: auto;
+}
+#netto-tilbud {
+	width: 80%;
+	display: block;
+	margin: auto;
+	margin-bottom: 60px;
+}
+#rema-logo {
+	width: 70%;
+	display: block;
+	margin: auto;
+}
+#rema-tilbud {
+	width: 80%;
+	display: block;
+	margin: auto;
+	margin-bottom: 20px;
+}
+#map {
+	height: 300px;
+	width: 90%; 
+	margin: auto;
+}
+@media screen and (min-width: 450px){
+	#tilbudsblokke {
+		display: flex;
+	}
+	#netto_blok {
+		width: 50%;
+	}
+	#rema_blok {
+		width: 50%;
+	}
+	#rema-tilbud {
+		width: 70%;
+	}
+	#map {
+		height: 600px;
+	}
+}
+/* ---------- SLUT tilbudsaviser ---------- */
+
+
+/* ---------- START indkøb ---------- */
+#indkoeb {
+	margin-top: 120px;
+	margin-bottom: 100px;
+}
+#indkoeb_link {
+	color: #6f8e60;
+	font-style: oblique;
+	text-decoration: none;
+}
+#indkoebsliste {
+	width: 100%;
+	display: block;
+	margin: auto;
+	margin-bottom: 50px;
+}
+.undermenu {
+	color: black;
+	text-decoration: none;
+	font-size: 16px;
+	padding: 5px;
+}
+.undermenu:hover {
+	color: white;
+}
+
+#undermenu_blok {
+	margin-bottom: 15px;
+}
+
+@media screen and (min-width: 450px){
+	.undermenu {
+		font-size: 22px;
+	}
+}
+/* ---------- SLUT indkøb ---------- */
+
+
+/* ---------- START vasketider ---------- */
+#vasketider {
+	margin-top: 120px;
+	margin-bottom: 100px;
+}
+#vasketider_link {
+	color: #6f8e60;
+	font-style: oblique;
+	text-decoration: none;
+}
+@media screen and (min-width: 450px){
+	#indkoebsliste {
+		width: 90%;
+}
+}
+/* ---------- SLUT vasketider ---------- */
+
+
+/* ---------- START madplan ----------- */
+#madplan_retter {
+	margin-top: 150px;
+	margin-bottom: 150px;
+}
+#madplan_link {
+	color: #6f8e60;
+	font-style: oblique;
+	text-decoration: none;
+}
+.material-icons.md-36 {
+	font-size: 36px;
+}
+#madplan_titel {
+	margin-bottom: -10px;
+}
+#madplan_undertitel {
+	text-align: center;
+	font-style: oblique;
+}
+.retter {
+	width: 70%;
+	display: block;
+	margin: auto;
+}
+.fremgangsmaade {
+	text-align: left;
+}
+.ret_titel {
+	margin-top: 60px;
+}
+#rester_tekst {
+	margin-bottom: 70px;
+}
+@media screen and (min-width: 450px){
+	.retter {
+		width: 50%;
+	}
+}
+/* ---------- SLUT madplan ---------- */
+
+
+/* ---------- START husregler ----------*/
+#husregler_billede {
+	width: 90%;
+	display: block;
+	margin: auto;
+	margin-bottom: 50px;
+}
+@media screen and (min-width: 450px){
+	#husregler_billede {
+		width: 50%;
+	}
+}
+/* --------- SLUT husregler --------- */
+
+
+/* ---------- START 404 ---------- */
+#error_billede {
+	display: block;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+#forsiden_knap {
+	display: block;
+	background-color: #6f8e60;
+	font-size: 16px;
+	width: 60%;
+	margin: auto;
+	margin-top: 50px;
+	margin-bottom: 100px;
+}
+@media screen and (min-width: 450px){
+	#error_billede {
+		width: 60%;
+	}
+	#forsiden_knap {
+		font-size: 20px;
+		width: 50%;
+		margin-bottom: 150px;
+	}
+}
+@media screen and (min-width: 900px){
+	#error_billede {
+		width: 45%;
+	}
+	#forsiden_knap {
+		font-size: 24px;
+		width: 40%;
+		margin-bottom: 200px;
+	}
+}
+/* ---------- SLUT 404 ---------- */

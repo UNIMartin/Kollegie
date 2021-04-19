@@ -2,29 +2,42 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Grundfos Kollegiet</title>
+<title>Grundfos Kollegiet - indkøb</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 </head>
 
 <body>
 	
 	<header>
-	
+		
+		<img id="bannerlogo" src="img/GK-logo-bygning.png" alt="Grundfos Kollegie bannerlogo">
+		
 	</header>
 	
 	
-	
 	<main>
-	
+		
+		<h3 id="login_titel">Log ind</h3>
+
+<form action="forside_login.html" method="get">
+
+  <div class="container">
+    <label for="uname"><b>Brugernavn</b></label>
+    <input type="text" placeholder="Indtast brugernavn" id="uname" required>
+
+    <label for="psw"><b>Adgangskode</b></label>
+    <input type="password" placeholder="Indtast adgangskode" id="psw" required>
+        
+    <button type="submit">Log ind</button>
+  </div>
+
+</form>
+
+		
 	</main>
-	
-	
-	
-	<footer>
-	
-	</footer>
-	
 	
 	
 	<script src="js/js.js"></script>
