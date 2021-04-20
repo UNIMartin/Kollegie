@@ -99,7 +99,7 @@ h2 {
 	font-size: 40px;
 	background-color: rgb(111,142,96);
 	background-color: rgba(111,142,96, 0.9);
-	color: black;
+	color: white;
 	text-decoration: none;
 	padding: 5px;
 	padding-left: 20px;
@@ -433,6 +433,7 @@ h2 {
 }
 #forsiden_knap {
 	display: block;
+	color: white;
 	background-color: #6f8e60;
 	font-size: 16px;
 	width: 60%;
